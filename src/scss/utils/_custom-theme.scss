@@ -1,0 +1,106 @@
+@use '@angular/material' as mat;
+@include mat.core();
+// GAMA COLORS //// Define los colores personalizados
+$primary-color: #1513a7;
+$accent-color: #027332;
+$warn-color: #FFDE03;
+
+// Define tu tema utilizando los colores personalizados
+$my-app-primary: mat.define-palette((
+  50: $primary-color,
+  100: $primary-color,
+  200: $primary-color,
+  300: $primary-color,
+  400: $primary-color,
+  500: $primary-color,
+  600: $primary-color,
+  700: $primary-color,
+  800: $primary-color,
+  900: $primary-color,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+  ),
+));
+
+$my-app-accent: mat.define-palette((
+  50: $accent-color,
+  100: $accent-color,
+  200: $accent-color,
+  300: $accent-color,
+  400: $accent-color,
+  500: $accent-color,
+  600: $accent-color,
+  700: $accent-color,
+  800: $accent-color,
+  900: $accent-color,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+));
+
+$my-app-warn: mat.define-palette((
+  50: $warn-color,
+  100: $warn-color,
+  200: $warn-color,
+  300: $warn-color,
+  400: $warn-color,
+  500: $warn-color,
+  600: $warn-color,
+  700: $warn-color,
+  800: $warn-color,
+  900: $warn-color,
+  A100: $warn-color,
+  A200: $warn-color,
+  A400: $warn-color,
+  A700: $warn-color,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+));
+
+// Define tu tema principal con los colores personalizados
+$my-app-theme: mat.define-light-theme((
+  color: (
+    primary: $my-app-primary,
+    accent: $my-app-accent,
+    warn: $my-app-warn,
+  ),
+));
+
+// Aplica el tema a tus componentes
+@include mat.all-component-themes($my-app-theme);

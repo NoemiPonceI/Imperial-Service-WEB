@@ -1,0 +1,75 @@
+<section class="container-home">
+  <div class="container-text">
+    <div>
+      <h1 class="m-0 pb-16">VIAJA TODO EL AÑO</h1>
+      <p class="m-0">
+        SOMOS LA AGENCIA NUMERO <strong>1</strong> DE VENTAS <br />DE PASAJES
+        AEREOS
+      </p>
+    </div>
+  </div>
+</section>
+<section class="section-somos">
+  <div class="container container-somos d-flex">
+    <div class="col-6">
+      <div class="container-us">CONÓCENOS</div>
+      <div class="divider-text vision-text-color"></div>
+      <div class="description-us">
+        Brindamos asesoría personalizada a cada uno de nuestros clientes con sus
+        viajes de negocios, vacaciones, alojamientos, tours, cruceros y más.
+        Nuestra estrategia es ofrecer servicios integrales para generar un valor
+        agregado y así distinguirnos entre las mayores empresas de turismo.
+      </div>
+      <div class="container-vision d-flex">
+        <div>
+          <div class="container-us font-bold">VISIÓN :</div>
+          <div class="divider-text vision-text"></div>
+        </div>
+        <div class="vision-description">
+          Dar siempre el mejor servicio a la comunidad Latinoamericana.
+        </div>
+      </div>
+    </div>
+    <div class="col-6 img-asesoria">
+      <img src="../../../assets/images/nosotros-asesoria.png" alt="" />
+    </div>
+    <!-- -->
+  </div>
+</section>
+<section class="section-services" id="precio">
+  <div class="container container-somos">
+    <div class="">
+      <div class="container-us what-text"><strong>¿QUE INCLUYE EL PRECIO?</strong></div>
+      <div class="container-cards">
+        <ng-container *ngFor="let item of itemsServices">
+          <mat-card class="example-card">
+            <mat-card-content>
+              {{ item.description }}
+            </mat-card-content>
+          </mat-card>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-service">
+  <div class="container">
+    <div class="container-us">SERVICIOS</div>
+    <div class="divider-text"></div>
+    <div class="container-service row">
+      <div class="col-md-4 col-sm-12 container-service-list" *ngFor="let value of services">
+        <mat-card class="example-card mat-card">
+            <img alt="Photo of a Shiba Inu" mat-card-image src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg">
+            <mat-card-content class="mat-card-content">
+                <div class="card-body">
+                    <h4 class="card-title">{{value.title}}</h4>
+                    <div>{{value.description}}</div>
+                  
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    
+    </div>
+  </div>
+</section>

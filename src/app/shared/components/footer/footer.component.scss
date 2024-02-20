@@ -1,0 +1,32 @@
+@import "../../../../scss/index.scss";
+.footer-info {
+  background: #031888; /* Coloca el pie de página al fondo del contenedor principal */
+  width: 100%; /* Haz que la sección ocupe todo el ancho del contenedor principal */
+  height: 12rem;
+  color: #ffffff;
+  padding: 1rem 0 2rem;
+}
+mat-icon {
+  color: #ffffff;
+}
+.icons-footer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  a {
+    img {
+      width: 1.5rem;
+      background: #304ad0;
+      margin: 0.5rem;
+      padding: 0.3rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .col-4 {
+    width: 50%;
+  }
+  .footer-info {
+    height: 18rem;
+  }
+}

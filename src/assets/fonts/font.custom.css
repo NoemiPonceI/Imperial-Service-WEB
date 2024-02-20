@@ -1,0 +1,65 @@
+@font-face{
+    font-family:'AlicorpWeb-Bold';
+    src:url('bold/Gotham-Bold.eot');
+    src:url('bold/Gotham-Bold.eot') format('embedded-opentype'),
+    url('bold/Gotham-Bold.woff2') format('woff2'),
+    url('bold/Gotham-Bold.woff') format('woff'),
+    url('bold/Gotham-Bold.svg') format('svg');
+}
+
+@font-face {
+    font-family:'AlicorpWeb-Bold-Italic';
+    src: url('bold-italic/Gotham-BoldItalic.otf');
+}
+
+@font-face{
+    font-family:'AlicorpWeb-Book';
+    src:url('book/Gotham-Book.eot');
+    src:url('book/Gotham-Book.eot') format('embedded-opentype'),
+    url('book/Gotham-Book.woff2') format('woff2'),
+    url('book/Gotham-Book.woff') format('woff'),
+    url('book/Gotham-Book.svg') format('svg');
+}
+
+@font-face {
+    font-family:'AlicorpWeb-Book-Italic';
+    src: url('book-italic/Gotham-BookItalic.otf');
+}
+
+@font-face{
+    font-family:'AlicorpWeb-Light';
+    src:url('light/Gotham-Light.eot');
+    src:url('light/Gotham-Light.eot') format('embedded-opentype'),
+    url('light/Gotham-Light.woff2') format('woff2'),
+    url('light/Gotham-Light.woff') format('woff'),
+    url('light/Gotham-Light.svg') format('svg');
+}
+
+@font-face {
+    font-family:'AlicorpWeb-Light-Italic';
+    src: url('light-italic/Gotham-LightItalic.otf');
+}
+
+@font-face{
+    font-family:'AlicorpWeb-Medium';
+    src:url('medium/Gotham-Medium.otf');
+    src:url('medium/Gotham-Medium.otf') format('embedded-opentype'),
+    url('/medium/Gotham-Medium.eot') format("embedded-opentype")
+    url('medium/Gotham-Medium.woff2') format('woff2'),
+    url('medium/Gotham-Medium.woff') format('woff'),
+    url('medium/Gotham-Medium.svg') format('svg');
+}
+
+@font-face {
+    font-family:'AlicorpWeb-Medium-Italic';
+    src: url('medium-italic/Gotham-MediumItalic.otf');
+}
+@font-face{
+    font-family:'AlicorpWeb-SemiBold';
+    src:url('semiBold/AlicorpSans-SemiBold.otf');
+    src:url('semiBold/AlicorpSans-SemiBold.otf') format('embedded-opentype'),
+    url('/semiBold/AlicorpSans-SemiBold.eot') format("embedded-opentype")
+    url('semiBold/AlicorpSans-SemiBold.woff2') format('woff2'),
+    url('semiBold/AlicorpSans-SemiBold.woff') format('woff'),
+    url('semiBold/AlicorpSans-SemiBold.eot') format('eot');
+}

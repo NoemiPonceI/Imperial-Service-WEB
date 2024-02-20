@@ -1,0 +1,122 @@
+<mat-toolbar color="primary">
+  <div class="container d-flex">
+    <!-- Logo -->
+    <div class="logo">
+      <!-- Aquí va tu logo -->
+      <img
+        src="../../../../assets/images/logo_italiapn.png"
+        alt="Logo"
+        width="150"
+      />
+    </div>
+
+    <!-- Espacio para que los botones vayan a la derecha -->
+    <div class="spacer"></div>
+
+    <!-- Botones -->
+    <div class="button-container">
+      <button mat-button class="example-text-button" aria-label="Inicio">
+        Inicio
+      </button>
+      <button mat-button class="example-text-button d-md-flex d-sm-none" aria-label="Nosotros">
+        Nosotros
+      </button>
+      <button
+        mat-button
+        class="example-text-button d-md-flex d-sm-none"
+        [matMenuTriggerFor]="servicesMenu"
+        aria-label="Servicios"
+      >
+        Servicios
+      </button>
+    </div>
+
+    <!-- Redes sociales -->
+    <div class="social-media-container d-md-flex d-sm-none">
+      
+      <a
+        href="https://web.facebook.com/profile.php?id=100048665486794"
+        class="facebook example-text-button"
+      >
+        <mat-icon>facebook</mat-icon>
+      </a>
+      <a href="#" class="instagram example-text-button" aria-label="Instagram">
+        <img
+          src="../../../../assets/images/icons-instagram.svg"
+          alt="instagram"
+          width="25"
+        />
+      </a>
+      <a
+        href="https://wa.me/51992074892"
+        class="whatsapp example-text-button"
+        aria-label="WhatsApp"
+      >
+        <img
+          src="../../../../assets/images/icons-whatsapp.svg"
+          alt="WhatsApp"
+          width="25"
+        />
+      </a>
+    </div>
+    <div class="d-md-none burger">
+      <a
+        href="#"
+        class="social-media-icon example-text-button"
+        aria-label="Menú de redes sociales"
+        [matMenuTriggerFor]="redesMenu"
+      >
+        <mat-icon>menu</mat-icon>
+      </a>
+    </div>
+  </div>
+</mat-toolbar>
+
+<mat-menu #servicesMenu="matMenu">
+  <button mat-menu-item>Hospitalidad</button>
+  <button mat-menu-item>Destinos</button>
+  <button mat-menu-item href="#precio">Precios</button>
+</mat-menu>
+<mat-menu #redesMenu="matMenu">
+  <button mat-button class="example-text-button" aria-label="Nosotros">
+    Nosotros
+  </button>
+  <button
+    mat-button
+    class="example-text-button"
+    [matMenuTriggerFor]="servicesMenu"
+    aria-label="Servicios"
+  >
+    Servicios
+  </button>
+  <button mat-menu-item>
+    <a
+      href="https://web.facebook.com/profile.php?id=100048665486794"
+      class="facebook example-text-button"
+    >
+      <mat-icon>facebook</mat-icon>
+    </a>
+  </button>
+  <button mat-menu-item>
+    <a href="#" class="instagram example-text-button" aria-label="Instagram">
+      <img
+        src="../../../../assets/images/icons-instagram.svg"
+        alt="instagram"
+        width="25"
+      />
+    </a>
+  </button>
+  <button mat-menu-item>
+    <a
+      href="https://wa.me/51992074892"
+      class="whatsapp example-text-button"
+      aria-label="WhatsApp"
+    >
+      <img
+        src="../../../../assets/images/icons-whatsapp.svg"
+        alt="WhatsApp"
+        width="25"
+      />
+    </a>
+  </button>
+</mat-menu>

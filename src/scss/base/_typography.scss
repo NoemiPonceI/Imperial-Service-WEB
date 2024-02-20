@@ -1,0 +1,70 @@
+$font-family-bold: "ImperialWeb-Bold";
+$font-family-bold-italic: "ImperialWeb-Bold-Italic";
+$font-family-book: "ImperialWeb-Book";
+$font-family-book-italic: "ImperialWeb-Book-Italic";
+$font-family-light: "ImperialWeb-Light";
+$font-family-light-italic: "ImperialWeb-Light-Italic";
+$font-family-medium: "ImperialWeb-Medium";
+$font-family-medium-italic: "ImperialWeb-Medium-Italic";
+$dl-font-family-semibold: "ImperialWeb-SemiBold";
+.font-bold {
+  font-family: $font-family-bold;
+}
+
+.font-bold-italic {
+  font-family: $font-family-bold-italic;
+}
+
+.font-book {
+  font-family: $font-family-book;
+}
+
+.font-book-italic {
+  font-family: $font-family-book-italic;
+}
+
+.font-light {
+  font-family: $font-family-light;
+}
+
+.font-light-italic {
+  font-family: $font-family-light-italic;
+}
+
+.font-medium {
+  font-family: $font-family-medium;
+}
+
+.font-medium-italic {
+  font-family: $font-family-medium-italic;
+}
+.font-semiBold {
+  font-family: $dl-font-family-semibold;
+}
+// font size
+$text-size-input: 0.9rem;
+$text-size-title: 32px;
+$text-size-24: 24px;
+$text-size-20: 20px;
+$text-size-18: 18px;
+$text-size-16: 16px;
+$text-size-14: 14px;
+$text-size-12: 12px;
+$text-size-11: 11px;
+$text-size-10: 10px;
+
+// font weight
+$font-weight-500: 500;
+$font-weigh-n: normal;
+$font-weigh-m: medium;
+
+// font height
+$line-height-title: 40px;
+$line-height-28: 28px;
+$line-height-24: 24px;
+$line-height-23: 23px;
+$line-height-20: 20px;
+$line-height-16: 16px;
+$line-height-15: 15px;
+$line-height-12: 12px;
+$line-height-11: 11px;
