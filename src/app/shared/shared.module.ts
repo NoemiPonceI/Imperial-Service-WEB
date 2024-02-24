@@ -1,4 +1,4 @@
-import { registerLocaleData } from "@angular/common";
+import { CommonModule, registerLocaleData } from "@angular/common";
 import localeEspE from '@angular/common/locales/es-PE';
 import { MaterialModule } from "./material/material.module";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
@@ -6,6 +6,9 @@ import { RouterModule } from "@angular/router";
 import { HeaderComponent } from "./components/header/header.component";
 import { NgModule } from "@angular/core";
 import { FooterComponent } from "./components/footer/footer.component";
+import { ServiceModalComponent } from "./components/service-modal/service-modal.component";
+import { PreviewComponent } from "./components/preview/preview.component";
+import { GaleryComponent } from "./components/galery/galery.component";
 registerLocaleData(localeEspE, 'es-PE');
 
 const MODULES = [
@@ -17,7 +20,10 @@ const MODULES = [
 
 const COMPONENTS = [
   HeaderComponent,
-  FooterComponent
+  FooterComponent,
+  ServiceModalComponent,
+  PreviewComponent,
+  GaleryComponent
 ]
 
 
@@ -26,7 +32,7 @@ const COMPONENTS = [
   declarations: [
     ...COMPONENTS
   ],
-  imports: [...MODULES],
+  imports: [...MODULES,CommonModule],
   exports: [
     ...MODULES,
     ...COMPONENTS

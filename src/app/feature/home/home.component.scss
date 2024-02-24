@@ -1,6 +1,7 @@
 @import "./../../../scss/index.scss";
 .container-home {
-  padding: 6rem;
+  padding: 3rem;
+  margin-top: 6rem;
   z-index: 1;
   display: flex;
   align-items: center; /* Alinear verticalmente en el centro */
@@ -39,7 +40,7 @@
   color: black;
   align-items: center;
   display: flex;
-  padding: 3rem 0;
+  padding: 4rem 0;
   font-size: 1rem;
   line-height: 1.6;
 }
@@ -69,7 +70,7 @@ p {
   padding-bottom: 0.5rem;
 }
 .divider-text {
-  width: 7rem;
+  width: 10rem;
   height: 5px;
   margin-top: 0px;
   display: block;
@@ -81,7 +82,7 @@ p {
   align-items: center;
 }
 .vision-text {
-  width: 4rem;
+  width: 6rem;
   background: #1513a7;
 }
 .vision-text-color {
@@ -89,7 +90,7 @@ p {
 }
 .vision-description {
   font-weight: 700;
-  margin-left: 1rem;
+  padding-top: 1rem;
   color: #1513a7;
 }
 .img-asesoria {
@@ -104,7 +105,7 @@ p {
 }
 .section-services {
   height: auto;
-  padding: 2rem 0;
+  padding: 4rem 0;
   background: #031888;
 }
 .container-cards {
@@ -142,6 +143,19 @@ p {
 }
 .what-text {
   color: white;
+  padding-bottom: 2rem;
+}
+.font-size-custom{
+  font-size: 1.5rem;
+}.card-title{
+  color:#1513a7 ;
+}
+.mat-mdc-card {
+  border-color: #1513a7 ;
+}
+.button-services{
+  margin-top: 1rem;
+  justify-content: center;
 }
 @media (max-width: 768px) {
   .container-somos {

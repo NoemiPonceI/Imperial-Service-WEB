@@ -6,6 +6,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
+import {MatDialogModule} from '@angular/material/dialog';
+
 const MODULES = [
   FormsModule,
   ReactiveFormsModule,
@@ -13,7 +15,8 @@ const MODULES = [
   MatIconModule,
   MatMenuModule,
   MatButtonModule,
-  MatCardModule
+  MatCardModule,
+  MatDialogModule
 ]
 
 
@@ -21,7 +24,6 @@ const MODULES = [
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
     ...MODULES
   ],
   providers: [

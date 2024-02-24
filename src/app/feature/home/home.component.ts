@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ServiceModalComponent } from 'src/app/shared/components/service-modal/service-modal.component';
 
 @Component({
   selector: 'app-home',
@@ -47,25 +49,36 @@ export class HomeComponent implements OnInit {
   services= [
     {
       "title": "Imperial Service Tours",
-      "description": "Explore the world with our luxury tour packages tailored to your needs.",
-      "img": "https://example.com/tours.jpg"
+      "description": "Venta de pasaejs aéreos",
+      "img": "../../../assets/images/tours.jpeg"
     },
     {
       "title": "Imperial Service Cargo",
-      "description": "Efficient and reliable cargo transportation services to deliver your goods worldwide.",
-      "img": "https://example.com/cargo.jpg"
+      "description": "Servici de puerta a puerta, paqueteria de service a todo el Perú",
+      "img": "../../../assets/images/cargo.jpeg"
     },
     {
       "title": "Imperial Service Money",
-      "description": "Secure and convenient money transfer services for your financial needs.",
-      "img": "https://example.com/money.jpg"
+      "description": "Envios en dolares, euros y soles. Envios de documentos urgentes, invito familar,etc.",
+      "img": "../../../assets/images/money.jpeg"
     }
   ]
   
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
     
   }
+  showDetail(){
+    const dialogRef = this.dialog.open(ServiceModalComponent, {
+      height: 'auto',
+      width: '40rem',
+      data: {name: 'this.name', animal:' this.anima'},
+    });
 
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed',result);
+      
+    });
+  }
 }

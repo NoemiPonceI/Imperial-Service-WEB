@@ -1,7 +1,7 @@
 <mat-toolbar color="primary">
   <div class="container d-flex">
     <!-- Logo -->
-    <div class="logo">
+    <div class="logo" routerLink="/home">
       <!-- Aquí va tu logo -->
       <img
         src="../../../../assets/images/logo_italiapn.png"
@@ -18,14 +18,17 @@
       <button mat-button class="example-text-button" aria-label="Inicio">
         Inicio
       </button>
-      <button mat-button class="example-text-button d-md-flex d-sm-none" aria-label="Nosotros">
+      <button mat-button class="example-text-button d-md-flex d-sm-none" aria-label="Nosotros"(click)="scrollToSection('nosotros')">
         Nosotros
+      </button>
+      <button mat-button class="example-text-button d-md-flex d-sm-none" aria-label="Nosotros"(click)="scrollToSection('precio')">
+        precios
       </button>
       <button
         mat-button
         class="example-text-button d-md-flex d-sm-none"
-        [matMenuTriggerFor]="servicesMenu"
         aria-label="Servicios"
+        (click)="scrollToSection('servicios')"
       >
         Servicios
       </button>
@@ -35,29 +38,23 @@
     <div class="social-media-container d-md-flex d-sm-none">
       
       <a
-        href="https://web.facebook.com/profile.php?id=100048665486794"
+        href="https://www.facebook.com/profile.php?id=100052189226268"
         class="facebook example-text-button"
+        target="_blank"
       >
         <mat-icon>facebook</mat-icon>
       </a>
-      <a href="#" class="instagram example-text-button" aria-label="Instagram">
+      <!-- <a href="#" class="instagram example-text-button" aria-label="Instagram" style="display:none;">
         <img
           src="../../../../assets/images/icons-instagram.svg"
           alt="instagram"
           width="25"
         />
+      </a> -->
+      <a href="https://wa.me/393899088839" class="whatsapp example-text-button" aria-label="WhatsApp" target="_blank">
+        <img src="../../../../assets/images/icons-whatsapp.svg" alt="WhatsApp" width="25">
       </a>
-      <a
-        href="https://wa.me/51992074892"
-        class="whatsapp example-text-button"
-        aria-label="WhatsApp"
-      >
-        <img
-          src="../../../../assets/images/icons-whatsapp.svg"
-          alt="WhatsApp"
-          width="25"
-        />
-      </a>
+      
     </div>
     <div class="d-md-none burger">
       <a
@@ -72,23 +69,23 @@
   </div>
 </mat-toolbar>
 
-<mat-menu #servicesMenu="matMenu">
-  <button mat-menu-item>Hospitalidad</button>
-  <button mat-menu-item>Destinos</button>
-  <button mat-menu-item href="#precio">Precios</button>
-</mat-menu>
+<!-- <mat-menu #servicesMenu="matMenu">
+  <button mat-menu-item (click)="scrollToSection('servicios')">Hospitalidad</button>
+  <button mat-menu-item (click)="scrollToSection('servicios')">Destinos</button>
+  <button mat-menu-item (click)="scrollToSection('precio')">Precios</button>
+</mat-menu> -->
 <mat-menu #redesMenu="matMenu">
   <button mat-button class="example-text-button" aria-label="Nosotros">
     Nosotros
   </button>
-  <button
+  <!-- <button
     mat-button
     class="example-text-button"
     [matMenuTriggerFor]="servicesMenu"
     aria-label="Servicios"
   >
     Servicios
-  </button>
+  </button> -->
   <button mat-menu-item>
     <a
       href="https://web.facebook.com/profile.php?id=100048665486794"
@@ -97,7 +94,7 @@
       <mat-icon>facebook</mat-icon>
     </a>
   </button>
-  <button mat-menu-item>
+  <!-- <button mat-menu-item >
     <a href="#" class="instagram example-text-button" aria-label="Instagram">
       <img
         src="../../../../assets/images/icons-instagram.svg"
@@ -105,12 +102,13 @@
         width="25"
       />
     </a>
-  </button>
+  </button> -->
   <button mat-menu-item>
     <a
-      href="https://wa.me/51992074892"
+      href="https://www.facebook.com/profile.php?id=100052189226268"
       class="whatsapp example-text-button"
       aria-label="WhatsApp"
+      target="_blank"
     >
       <img
         src="../../../../assets/images/icons-whatsapp.svg"

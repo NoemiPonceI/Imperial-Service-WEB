@@ -1,0 +1,31 @@
+<section class="content-services">
+  <div class="p-4 ">
+    <h1 class="title-c">Imperial Service Tours</h1>
+    <div class="title-c pb-4">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto blanditiis
+      placeat ducimus deserunt reprehenderit eveniet possimus quas, illo,
+      aperiam ut nemo obcaecati ipsa libero necessitatibus. Recusandae id saepe
+      facilis soluta!
+    </div>
+    <div class="container-galery pb-3 pt-3">
+     <section class="vw-100">
+     <div class="d-flex">  <div class="arrow-right" (click)="selectArrow()"></div>
+     <div class="arrow-left" (click)="selectLeftArrow()"></div></div>
+      <app-preview srcUrl="{{ pictures[currentPicture] }}"> </app-preview>
+      <div class="wrapper">
+        <app-galery
+          *ngFor="let picture of pictures; let i = index"
+          (click)="select(i)"
+          srcUrl="{{ picture }}"
+        >
+        </app-galery>
+      </div>
+     </section>
+    </div>
+    <div class="d-flex" class="container-button-dialog">
+      <button mat-raised-button (click)="openDialog()" class="button-dialog">
+        Cerrar
+      </button>
+    </div>
+  </div>
+</section>
