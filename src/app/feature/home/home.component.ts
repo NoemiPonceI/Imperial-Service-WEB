@@ -86,7 +86,8 @@ export class HomeComponent implements OnInit {
         'https://img.freepik.com/vector-gratis/concepto-financiacion_24877-50812.jpg?t=st=1708739518~exp=1708743118~hmac=468ced535d71a774f7768f4712742341f0efdb1e89c4d8927b5090e483565a98&w=1380',
       ],
     },
-  ]; constructor(public dialog: MatDialog) {}
+  ];
+  constructor(public dialog: MatDialog) {}
 
   ngOnInit() {}
 

@@ -7,7 +7,10 @@ import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./service-modal.component.scss']
 })
 export class ServiceModalComponent implements OnInit {
-  pictures: string[]; // Array to store pictures
+  pictures: {title: string;
+    description: string;
+    img: string;
+    detailImg: string[]}; // Array to store pictures
   currentPicture = 0; // Index of currently selected picture
 
   constructor(
@@ -33,7 +36,7 @@ export class ServiceModalComponent implements OnInit {
 
   // Move to the next picture
   selectArrow() {
-    if (this.currentPicture < this.pictures.length - 1) {
+    if (this.currentPicture < this.pictures?.detailImg.length - 1) {
       this.currentPicture++;
     }
   }
