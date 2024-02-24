@@ -11,7 +11,6 @@ export class GaleryComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    console.warn(this.srcUrl);
     
   }
 }
