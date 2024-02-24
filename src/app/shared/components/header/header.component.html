@@ -18,7 +18,7 @@
       <button mat-button class="example-text-button" aria-label="Inicio">
         Inicio
       </button>
-      <button mat-button class="example-text-button d-md-flex d-sm-none" aria-label="Nosotros"(click)="scrollToSection('nosotros')">
+      <button mat-button class="example-text-button d-md-flex d-sm-none" aria-label="inicio"(click)="scrollToSection('nosotros')">
         Nosotros
       </button>
       <button mat-button class="example-text-button d-md-flex d-sm-none" aria-label="Nosotros"(click)="scrollToSection('precio')">
@@ -75,9 +75,14 @@
   <button mat-menu-item (click)="scrollToSection('precio')">Precios</button>
 </mat-menu> -->
 <mat-menu #redesMenu="matMenu">
-  <button mat-button class="example-text-button" aria-label="Nosotros">
+  <button mat-menu-item   class="example-text-button" aria-label="Nosotros" (click)="scrollToSection('nosotros')">
     Nosotros
   </button>
+ <a href="">
+  <button mat-menu-item   class="example-text-button" aria-label="precios"(click)="scrollToSection('precio')">
+    precios
+  </button>
+ </a>
   <!-- <button
     mat-button
     class="example-text-button"
@@ -105,7 +110,7 @@
   </button> -->
   <button mat-menu-item>
     <a
-      href="https://www.facebook.com/profile.php?id=100052189226268"
+    href="https://wa.me/393899088839"
       class="whatsapp example-text-button"
       aria-label="WhatsApp"
       target="_blank"
@@ -116,5 +121,6 @@
         width="25"
       />
     </a>
+    
   </button>
 </mat-menu>

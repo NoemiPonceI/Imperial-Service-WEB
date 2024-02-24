@@ -61,6 +61,12 @@
     max-width: 1320px;
   }
 }
+@media (max-width: 600px) {
+
+  .container{
+    width: calc(100% - 2rem) !important;
+  }
+}
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;

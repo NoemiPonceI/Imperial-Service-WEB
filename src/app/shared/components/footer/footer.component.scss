@@ -22,11 +22,48 @@ mat-icon {
     }
   }
 }
+.border-footer{
+  border-bottom:none;
+}
 @media (max-width: 768px) {
   .col-4 {
     width: 50%;
   }
   .footer-info {
     height: 18rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contactanos {
+    -bs-gutter-x: 1.5rem; 
+   --bs-gutter-y: 0; 
+   display: block; 
+   flex-wrap: nowrap; 
+   margin-top: 0; 
+   margin-right: 0; 
+   margin-left: 0;
+    .col-4 {
+      width: 100%;
+    }
+  }
+  .footer-info {
+    height: 34rem;
+  }
+  .footer-custom {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+  }
+  .icons-footer{
+    text-align: center;
+    justify-content: center;
+  }
+  .border-footer {
+    border-bottom: 2px solid white;
+    padding: 1rem;
+  }
+  .container{
+    width: calc(100% - 2rem) !important;
   }
 }
