@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
       title: 'Imperial Service Tours',
       description:
         'N1 en venta de pasajes aéreos ofreciendote, seguridad, rapidez y garantía.',
-      img: '../../../assets/images/tours.jpeg',
+      img: '../../../assets/images/logo-tour.png',
       detailImg: [
         'https://img.freepik.com/foto-gratis/toma-aerea-hermosa-aldea-montana-capturada-machu-picchu-peru_181624-14674.jpg',
         'https://img.freepik.com/foto-gratis/ya-esta-todo-listo-sus-vacaciones-representante-ventas-entregando-pasaportes-boletos-avion-mujer-hombre-jovenes-su-viaje-vacaciones-agencia-viajes_662251-2215.jpg',
@@ -65,7 +65,7 @@ export class HomeComponent implements OnInit {
       title: 'Imperial Service Cargo',
       description:
         'Encargados de paquetería service a todo el peru, nuestro servicio de puerta a puerta y retiros en todo Italia',
-      img: '../../../assets/images/cargo.jpeg',
+      img: '../../../assets/images/cargo-logo.jpeg',
       detailImg: [
         '../../../assets/images/cargo-01.jpeg',
         '../../../assets/images/cargo-02.jpeg',
@@ -78,7 +78,7 @@ export class HomeComponent implements OnInit {
       title: 'Imperial Service Money',
       description:
         'Envios en dólares, euros y soles, ofreciendote una variedad de opciones de acuerdo a lo que solicites',
-      img: '../../../assets/images/money.jpeg',
+      img: '../../../assets/images/logo-money.png',
       detailImg: [
         'https://img.freepik.com/foto-gratis/dinero-rico-efectivo-antiguo-anonimo_1150-1656.jpg?t=st=1708739293~exp=1708742893~hmac=352c0e0f8dccec45d7afcbed2f15190618483cfbff59b36f37b185f81f325552&w=2000',
         'https://img.freepik.com/foto-gratis/manos-abriendo-sobre-lleno-billetes_176474-7125.jpg?t=st=1708739402~exp=1708743002~hmac=f7db2cd6571e331331df8970831a7bc9004280476912ab6b8f508977feebd58e&w=2000',
